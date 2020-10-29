@@ -343,7 +343,7 @@ nav{
         margin-bottom: 20px;
     }
     .medsos-box{
-        top: 35%;
+        display: none;
     }
     .webdev-page .col-md-4{
         margin-top: 15px;
