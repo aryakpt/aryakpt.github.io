@@ -1,3 +1,8 @@
+
+
+
+
+
 // $('.scroll-page').on('click', function(e){
 //     //ambil isi href page-scroll
 //     var tujuan = $(this).attr('href');

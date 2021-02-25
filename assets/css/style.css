@@ -1,11 +1,11 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Catatan
@@ -14,338 +14,335 @@ html{
     btn2 : background putih, color kuning. Hover background gelap, color putih
 */
 
-
 /* ======= Navbar ======= */
-nav{
-    background-color: white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+nav {
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
-.navbar-nav a{
-    font-weight: 500;
-    color:#292929;
-    text-decoration: none;
-    font-size: 20px;
-    margin-left: 50px;
+.navbar-nav a {
+  font-weight: 500;
+  color: #292929;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 50px;
 }
-.navbar-nav a:hover{
-    color: #FFB633;
-    transition: 0.3s ease;
+.navbar-nav a:hover {
+  color: #ffb633;
+  transition: 0.3s ease;
 }
 
 /* ======= Medsos Box ======= */
-.medsos-box{
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.548);
-    background-image: linear-gradient(to bottom, #fc9801 , #f1ee0b); 
-    position: fixed;
-    top: 40%;
-    border-radius: 0px 10px 10px 0px;
-    z-index: 999;
-    height: 220px;
+.medsos-box {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.548);
+  background-image: linear-gradient(to bottom, #fc9801, #f1ee0b);
+  position: fixed;
+  top: 40%;
+  border-radius: 0px 10px 10px 0px;
+  z-index: 999;
+  height: 220px;
 }
-.medsos-box ul li{
-    list-style: none;
-    padding: 10px 12px;
+.medsos-box ul li {
+  list-style: none;
+  padding: 10px 12px;
 }
-.medsos-box ul li a img{
-    width: 35px;
+.medsos-box ul li a img {
+  width: 35px;
 }
 
 /* ================================= MAIN PAGE =================================*/
 
 /* ======= HOME ======= */
-.home{
-    background-color:#FBFBFB;
+.home {
+  background-color: #fbfbfb;
 }
-.text-container{
-    margin-top: 50%;
+.text-container {
+  margin-top: 50%;
 }
-.text-container h1{
-    font-size: 60px;
-    font-weight: bold;
-    color: #292929;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
+.text-container h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #292929;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
 }
-#job{
-    font-size: 28px;
-    font-weight: 500;
-    color: #5a5a5a;
-    margin-bottom: 25px;
+#job {
+  font-size: 28px;
+  font-weight: 500;
+  color: #5a5a5a;
+  margin-bottom: 25px;
 }
-.btn{
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: 500;
-    color:white;
-    border: 0.5px solid #FFB633;
-    padding: 12px 25px;
-    border-radius: 0px;
-    background: #FFB633;
-    cursor: pointer;
+.btn {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  border: 0.5px solid #ffb633;
+  padding: 12px 25px;
+  border-radius: 0px;
+  background: #ffb633;
+  cursor: pointer;
 }
-.btn:hover{
-    color: #FFB633;
-    background-color: white;
-    transition: 0.4s ease;
+.btn:hover {
+  color: #ffb633;
+  background-color: white;
+  transition: 0.4s ease;
 }
-.model{
-    margin-top: 15%;
+.model {
+  margin-top: 15%;
 }
-.model img{
-    max-width: 130%;  
+.model img {
+  max-width: 130%;
 }
 
 /* ======= About Me ======= */
-.about{
-    background-color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
+.about {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.foto{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: -65px 0px;
+.foto {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: -65px 0px;
 }
-.about h2{
-    color: #292929;
-    font-weight: bold;
-    margin-bottom: 20px;
+.about h2 {
+  color: #292929;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-#about{
-    font-size: 18px;
-    color: #535353;
-    line-height: 25px;
-    margin-bottom: 30px;
+#about {
+  font-size: 18px;
+  color: #535353;
+  line-height: 25px;
+  margin-bottom: 30px;
 }
-.btn-box-about{
-    display: flex;
-    align-items: center;
+.btn-box-about {
+  display: flex;
+  align-items: center;
 }
-.btn-box-about a{
-    margin-right: 50px;
+.btn-box-about a {
+  margin-right: 50px;
 }
 
 /* ======= Portfolio ======= */
-.portfolio{
-    background-color: #FBFBFB;
-    padding-top: 80px;
-    padding-bottom: 80px;
+.portfolio {
+  background-color: #fbfbfb;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.portfolio h2{
-    color: #292929;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
+.portfolio h2 {
+  color: #292929;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.border-title-yellow{
-    width: 80px;
-    margin: auto;
-    border-bottom: 4px solid #FFB633;
-    margin-bottom: 30px;
+.border-title-yellow {
+  width: 80px;
+  margin: auto;
+  border-bottom: 4px solid #ffb633;
+  margin-bottom: 30px;
 }
-#desc-portfolio{
-    font-size: 18px;
-    color: #292929;
-    text-align: center;
-    margin-bottom: 40px; 
+#desc-portfolio {
+  font-size: 18px;
+  color: #292929;
+  text-align: center;
+  margin-bottom: 40px;
 }
-.portfolio .card{
-    width: 100%;
-    height: 400px;
-    border-radius: 0px;
+.portfolio .card {
+  width: 100%;
+  height: 400px;
+  border-radius: 0px;
 }
-.portfolio .card img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+.portfolio .card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
-.portfolio .card-img-overlay{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #292929b4;
-    border-radius: 0px;
-    padding: 50px 30px;
-    color: #FBFBFB;
-    font-size: 18px;
-    text-align: center;
+.portfolio .card-img-overlay {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #292929b4;
+  border-radius: 0px;
+  padding: 50px 30px;
+  color: #fbfbfb;
+  font-size: 18px;
+  text-align: center;
 }
-.portfolio .card-img-overlay a{
-    font-weight: 500;
-    align-items: center;
+.portfolio .card-img-overlay a {
+  font-weight: 500;
+  align-items: center;
 }
-.portfolio .card-img-overlay a img{
-    width: 16px;
-    color: white;
-    margin-left: 5px;
-    height: auto;
+.portfolio .card-img-overlay a img {
+  width: 16px;
+  color: white;
+  margin-left: 5px;
+  height: auto;
 }
-.btn2{
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    color:white;
-    padding: 10px 18px;
-    border-radius: 0px;
-    background: #FFB633;
-    cursor: pointer;
+.btn2 {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 0px;
+  background: #ffb633;
+  cursor: pointer;
 }
-.btn2:hover{
-    text-decoration: none;
-    background:#292929;
-    color: white;
-    transition: 0.3s ease-in;
+.btn2:hover {
+  text-decoration: none;
+  background: #292929;
+  color: white;
+  transition: 0.3s ease-in;
 }
 
 /* ======= Hire me ======= */
-.hire-me{
-    background-image: url('../images/bg-hire.png');
-    background-size: cover;
-    object-fit: cover;
-    padding-top: 100px;
-    padding-bottom: 120px;
-    text-align: center;
+.hire-me {
+  background-image: url("../images/bg-hire.png");
+  background-size: cover;
+  object-fit: cover;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  text-align: center;
 }
-.border-title-white{
-    width: 80px;
-    margin: auto;
-    border-bottom: 4px solid white;
-    margin-bottom: 70px;
+.border-title-white {
+  width: 80px;
+  margin: auto;
+  border-bottom: 4px solid white;
+  margin-bottom: 70px;
 }
-.hire-me h1{
-    color: white;
-    font-size: 42px;
-    text-align: center;
-    font-weight: bolder;
-    margin-bottom: 40px;
+.hire-me h1 {
+  color: white;
+  font-size: 42px;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 40px;
 }
-.btn3{
-    color: #FFB633;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: white;
-    padding: 20px 50px;
-    text-decoration: none;
+.btn3 {
+  color: #ffb633;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  padding: 20px 50px;
+  text-decoration: none;
 }
-.btn3:hover{
-    color: white;
-    background-color: #292929;
-    text-decoration: none;
-    transition: 0.3s ease;
+.btn3:hover {
+  color: white;
+  background-color: #292929;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 /* ======== Contact ======= */
-.contact{
-    background-color: white;
-    color: #292929;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    text-align: center;
+.contact {
+  background-color: white;
+  color: #292929;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
 }
-.contact h2{
-    margin-bottom: 30px;
-    color: #292929;
-    font-weight: bold;
+.contact h2 {
+  margin-bottom: 30px;
+  color: #292929;
+  font-weight: bold;
 }
-#desc-contact{
-
-    margin-bottom: 40px;
+#desc-contact {
+  margin-bottom: 40px;
 }
-.detail-contact a{
-    display: block;
-    text-decoration: none;
-    color: #292929;
-    margin-bottom: 20px;
+.detail-contact a {
+  display: block;
+  text-decoration: none;
+  color: #292929;
+  margin-bottom: 20px;
 }
-.detail-contact a img{
-    margin-right: 10px;
+.detail-contact a img {
+  margin-right: 10px;
 }
 
 /* ======== Footer ======= */
-.footer{
-    background-color: #FBFBFB;
-    color: #292929;
-    padding: 20px 0px;
+.footer {
+  background-color: #fbfbfb;
+  color: #292929;
+  padding: 20px 0px;
 }
-.footer .col-md-12{
-    display: flex;
-    justify-content: space-between;
+.footer .col-md-12 {
+  display: flex;
+  justify-content: space-between;
 }
-.footer p{
-    margin-bottom: 0;
+.footer p {
+  margin-bottom: 0;
 }
-
 
 /* ================================= WEB DEV PAGE =================================*/
-.webdev-page{
-    background-color: #FBFBFB;
-    padding: 80px 0px;
-    min-height: 92vh;
+.webdev-page {
+  background-color: #fbfbfb;
+  padding: 80px 0px;
+  min-height: 92vh;
 }
-.webdev-page h2{
-    text-align: center;
-    color: #292929;
-    font-weight: bold;
-    margin-bottom: 30px;
+.webdev-page h2 {
+  text-align: center;
+  color: #292929;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
-#desc-webdev-page{
-    text-align: center;
-    color: #292929;
-    font-size: 18px;
-    margin-bottom: 70px;
+#desc-webdev-page {
+  text-align: center;
+  color: #292929;
+  font-size: 18px;
+  margin-bottom: 70px;
 }
-.webdev-page a img{
-    width: 100%;
-    margin-bottom: 10px;
-    transition: 0.2s ease;
+.webdev-page a img {
+  width: 100%;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
 }
-.webdev-page a img:hover{
-    transform: translateY(-10px);
+.webdev-page a img:hover {
+  transform: translateY(-10px);
 }
-.visit-site{
-    font-size: small;
-    color: #313131;
-    transition: 0.2s ease;
+.visit-site {
+  font-size: small;
+  color: #313131;
+  transition: 0.2s ease;
 }
-.visit-site:hover{
-    color: #FFB633;
-    text-decoration: none;
+.visit-site:hover {
+  color: #ffb633;
+  text-decoration: none;
 }
 /* Ukuran tablet*/
-@media screen and (max-width:768px){
-    .row{
-        text-align: center;
-    }
-    .btn-box{
-        justify-content: center;
-    }
-    .text-container h1{
-        padding-top: 20px;
-        font-size: 48px;
-    }
-    .text-container{
-        margin-top: 5%;
-    }
-    .model img{
-        max-width: 70%;
-    }
-    .foto{
-        margin-bottom: 30px;
-    }
-    #about{
-        text-align: justify;
-    }
-    .portfolio .card{
-        margin-bottom: 20px;
-    }
-    .medsos-box{
-        display: none;
-    }
-    .webdev-page .col-md-4{
-        margin-top: 15px;
-    }
+@media screen and (max-width: 768px) {
+  .row {
+    text-align: center;
+  }
+  .btn-box {
+    justify-content: center;
+  }
+  .text-container h1 {
+    padding-top: 20px;
+    font-size: 48px;
+  }
+  .text-container {
+    margin-top: 5%;
+  }
+  .model img {
+    max-width: 70%;
+  }
+  .foto {
+    margin-bottom: 30px;
+  }
+  #about {
+    text-align: justify;
+  }
+  .portfolio .card {
+    margin-bottom: 20px;
+  }
+  .medsos-box {
+    display: none;
+  }
+  .webdev-page .col-md-4 {
+    margin-top: 15px;
+  }
 }
