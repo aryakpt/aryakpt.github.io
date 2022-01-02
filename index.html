@@ -1,186 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
     <!-- My Style -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="assets/images/logotab.png">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="assets/images/logotab.png" />
     <title>Arya Krisna Putra</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- <header> -->
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo2.png" alt="logo" height="40px"></a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse justify-content-center navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="active" href="#home">Home</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-        <!--navbar-->
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light" >
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/logo2.png" alt="logo" height="40px"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a href="#home">Home</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                </div>
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="container" id="personal">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="model" data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-sine">
+              <!-- model -->
+              <div class="square"></div>
+              <img src="assets/images/arya.png" alt="aryakpt" />
             </div>
-        </nav>
-        <!-- Medsos Box -->
-        <section class="medsos-box">
-            <ul>
-                <li><a href="https://www.instagram.com/aryakpt/" target="_blank"><img src="assets/images/instagram.png" alt=""></a></li>
-                <li><a href="https://www.facebook.com/arya.krisnaputra.338" target="_blank"><img src="assets/images/facebook.png" alt=""></a></li>
-                <li><a href="https://twitter.com/aryakpt" target="_blank"><img src="assets/images/twitter.png" alt=""></a></li>
-                <li><a href="https://www.linkedin.com/in/arya-krisna-putra-2028411aa/" target="_blank"><img src="assets/images/linkedin.png" alt=""></a></li>
-            </ul>
-        </section>
-        <!-- Akhir Box -->
-        <!-- Home -->
-        <section class="home" id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="text-container" data-aos="fade-down" data-aos-duration="1000">
-                            <!-- text -->
-                            <h1>Hello,<br>I'm Arya Krisna</h1>
-                            <p id="job">College Student</p>
-                            <!--button  -->
-                            <div class="btn-box">
-                                <a href="#contact" role="button" class="btn">Contact me</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="model" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-easing="ease-in-sine">
-                            <!-- model -->
-                            <img src="assets/images/me2.png" alt="aryakpt">
-                        </div>   
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12">
+            <div class="text-container text-white" data-aos="fade-down" data-aos-duration="1000">
+              <!-- text -->
+              <h3>Hello <span>👻</span>, I'm Arya Krisna</h3>
+              <h5>College Student | Web Programmer</h5>
+              <a href="#project"
+                >Scroll Down <span class="ml-2"><i class="fas fa-long-arrow-alt-down"></i></span>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- About -->
-        <section class="about" id="about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-5 text-center" data-aos="fade-down" data-aos-duration="1000">
-                        <img src="assets/images/aboutme.jpg"  class="rounded-circle foto" alt="arya krisna" srcset="">
-                    </div>
-                    <div class="col-md-7" data-aos="fade-down" data-aos-duration="1500">
-                        <h2>About Me</h2>
-                        <p id="about">I'm the hard working and ambitious person who is responsible for every task that I undertake, always willing to learn new skills. I'm interested in web design and web development. If you want to make a website, I will make it for you. Just contact me.</p>
-                        <div class="btn-box-about">
-                            <a href="mailto:aryakrisna078@gmail.com" role="button" class="btn">Hire me</a>
-                            <a href="https://wa.me/6285600294361" target="_blank"><img src="assets/images/wa.png" alt=""></a>
-                            <a href="https://www.instagram.com/aryakpt/" target="_blank"><img src="assets/images/ig.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+    <!-- About-->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-md-10 col-sm-12">
+            <h3 class="title mb-4">About Me</h3>
+            <p>I'm currently an active student in Diponegoro University Semarang who is interested in UI/UX and Website Development. I'm the hard working and ambitious person who is responsible for every task that I undertake, always willing to learn new skills.</p>
+            <!--button  -->
+            <div class="btn-box">
+              <a href="https://drive.google.com/file/d/1f1vFblhchD34XeCF14jZTvGGuuSR1Ams/view?usp=sharing" role="button" class="btn" target="_blank">My Resume</a>
+              <div class="btn-media-sosial d-inline">
+                <a href="https://wa.me/6285600294361" class="ml-4" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/aryakpt/" class="ml-4" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/arya-krisna-putra-2028411aa/" class="ml-4" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
             </div>
-        </section>
-        <!-- Akhir About -->
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Project -->
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="col-md-12">
-                    <h2 data-aos="fade-down" data-aos-duration="800">Portfolio</h2>
-                    <div class="border-title-yellow" data-aos="fade-down" data-aos-duration="1000"></div>
-                    <p id="desc-portfolio" data-aos="fade-down" data-aos-duration="1200">My activities, endervors, development, and skill so far in various fields.</p>
-                </div>
-                <div class="row" >
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1200">
-                            <img class="card-img-top" src="assets/images/webdesign.jpeg" alt="Card image">
-                            <div class="card-img-overlay">
-                                <h4 class="card-title" id="webdesign">Web Design</h4>
-                                <p class="card-text">Salah satu hobi saya, yaitu merancang sebuah <i>design</i> dari suatu website.</p>
-                                <div>
-                                    <a href="https://www.instagram.com/webdesign.kpt/" class="btn2" target="_blank">More <img src="assets/images/right-arrow.png" alt="right-arrow"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="2000">
-                            <img class="card-img-top" src="assets/images/webdev.jpeg" alt="Card image">
-                            <div class="card-img-overlay">
-                              <h4 class="card-title">Web Development</h4>
-                              <p class="card-text">Implementasi dari web design menjadi website sesungguhnya yang telah saya buat.</p>
-                              <div>
-                                <a href="webdev.html" class="btn2">More <img src="assets/images/right-arrow.png" alt="right-arrow"> </a>
-                              </div>
-                              
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="2800">
-                            <img class="card-img-top" src="assets/images/youtube.jpg" alt="Card image">
-                            <div class="card-img-overlay">
-                              <h4 class="card-title">YouTube</h4>
-                              <p class="card-text">Platform ini saya gunakan untuk mengabadikan permainan <i>game online</i> saya.</p>
-                              <div>
-                                <a href="https://www.youtube.com/channel/UCOyOrfFgAB89Q8jyHgNsTPw?view_as=subscriber" class="btn2" target="_blank">More <img src="assets/images/right-arrow.png" alt="right-arrow"></a>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Project -->
+    <section class="project" id="project">
+      <h1 class="title-animate">MY PROJECTS</h1>
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="title">Web Development Projects</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- ISNPINSA -->
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5 project-detail">
+            <a href="https://isnpinsa.fsm.undip.ac.id/" class="project-link" target="_blank"><img src="assets/images/isnpinsa.jpg" alt="comingsoon" srcset="" /></a>
+            <div class="mt-3">
+              <p class="m-0"><b>International Seminar on New Paradigm and Innovation on Natural Sciences and its Application (ISNPINSA)</b> adalah konferensi tahunan yang diadakan oleh Fakultas Sains dan Matematika Universitas Diponegoro</p>
+              <a href="https://isnpinsa.fsm.undip.ac.id/" class="visit-site float-right" target="_blank">Visit site</a>
             </div>
-        </section>
-        <!-- Akhir Project -->
-
-        <!-- Hire Me -->
-        <section class="hire-me">
-            <div class="container" data-aos=fade-down data-aos-duration="1000">
-                <h1>Have Any Project In Mind?</h1>
-                <div class="border-title-white"> </div>
-                <div class="btn-box-hire">
-                    <a href="mailto:aryakrisna078@gmail.com" role="button" class="btn3">Hire me</a>
-                </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5 project-detail">
+            <a href="http://dcfundip.com/" class="project-link" target="_blank"><img src="assets/images/dcf.jpg" alt="comingsoon" srcset="" /></a>
+            <div class="mt-3">
+              <p class="m-0"><b>Diponegoro Chemistry Fair</b> adalah acara Kompetisi Kimia SMA, LKTI Nasional SMA, dan Seminar Nasional yang diadakan oleh Himpunan Mahasiswa Kimia Universitas Diponegoro.</p>
+              <a href="http://dcfundip.com/" class="visit-site float-right" target="_blank">Visit site</a>
             </div>
-        </section>
-        <!-- Akhir Hire Me -->
-
-        <!-- Get In Touch -->
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2 data-aos="fade-down" data-aos-duration="1000">Get In Touch</h2>
-                <div class="border-title-yellow" data-aos="fade-down" data-aos-duration="1200"> </div>
-                <p id="desc-contact" data-aos="fade-down" data-aos-duration="1400">Click one of my contacts below to say hello.</p>
-                <div class="detail-contact">
-                    <a href="https://wa.me/6285600294361" target="_blank" data-aos="fade-up" data-aos-duration="1600"><img src="assets/images/wa.png" alt="ig">+6285-600-294-361</a>
-                    <a href="mailto:aryakrisna078@gmail.com" target="_blank" data-aos="fade-up" data-aos-duration="1800"><img src="assets/images/email.png" alt="email" width="32px">aryakrisna078@gmail.com</a>
-                    <a href="https://www.instagram.com/aryakpt/" target="_blank" data-aos="fade-up" data-aos-duration="2000"><img src="assets/images/ig.png" alt="wa">aryakpt</a>
-                </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5 project-detail">
+            <a href="http://fsmmusicfestival.com/" class="project-link" target="_blank"><img src="assets/images/fmf.jpg" alt="comingsoon" srcset="" /></a>
+            <div class="mt-3">
+              <p class="m-0"><b>FSM Music Festival</b> adalah konser musik yang pada tahun 2021 ini mengusung tema Javanese Retro of Love.</p>
+              <a href="http://fsmmusicfestival.com/" class="visit-site float-right" target="_blank">Visit site</a>
             </div>
-        </section>
-        <!-- Akhir Get In Touch -->
-
-        <!-- Footer -->
-        <section class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>&copy; 2020 Arya Krisna</p>
-                        <p>Made with love.</p>
-                    </div>
-                </div>
+          </div>
+          <!-- P2M FKG UGM -->
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5 project-detail">
+            <a href="#" class="project-link" target="_blank"><img src="assets/images/p2mfkgugm.jpg" alt="comingsoon" srcset="" /></a>
+            <div class="mt-3">
+              <p class="m-0"><b>P2M FKG UGM</b> merupakan web apps yang saya kembangkan waktu masa Program Kerja Lapangan</p>
+              <!-- <a href="https://github.com/dimaspndw/KoKeRu" class="visit-site float-right" target="_blank">View on GitHub</a> -->
             </div>
-        </section>
+          </div>
+          <!-- Kokeru -->
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5 project-detail">
+            <a href="https://github.com/aryakpt/tubesPBPweb" class="project-link" target="_blank"><img src="assets/images/kokeru.jpg" alt="comingsoon" srcset="" /></a>
+            <div class="mt-3">
+              <p class="m-0"><b>KoKeRu</b> merupakan web apps kontrol kebersihan ruangan yang berfungsi untuk mengkoordinasikan semua kegiatan kebersihan pada kantor tertentu. Project ini merupakan salah satu tugas di kampus saya</p>
+              <a href="https://github.com/dimaspndw/KoKeRu" class="visit-site float-right" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+          <!-- Aurora -->
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5 project-detail">
+            <a href="https://github.com/aryakpt/tubesPBPweb" class="project-link" target="_blank"><img src="assets/images/aurora2.png.jpg" alt="comingsoon" srcset="" /></a>
+            <div class="mt-3">
+              <p class="m-0"><b>Aurora</b> merupakan web apps blog sederhana. Project ini merupakan salah satu tugas di kampus saya</p>
+              <a href="https://github.com/aryakpt/tubesPBPweb" class="visit-site float-right" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5 project-detail">
+            <a href="#" class="project-link"><img src="assets/images/csoon.png" alt="comingsoon" srcset="" /></a>
+            <div class="mt-3">
+              <p class="m-0">Tunggu project saya selanjutnya ya!</p>
+              <a href="" class="visit-site float-right">Cooming Soon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Project -->
 
-    
+    <!-- Hire Me -->
+    <section class="hire-me" id="hire-me">
+      <div class="container text-center">
+        <div class="row justify-content-between">
+          <div class="col-12">
+            <h4 class="mb-4">Interested working with me?</h4>
+            <a href="mailto:aryakrisna078@gmail.com" role="button" class="btn2">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Hire Me -->
+
+    <!-- Skill -->
+    <section class="skill" id="skill">
+      <h1 class="title-animate2">MY SKILLS</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="title text-center">Skills</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-6 col-sm-12 text-center skill-details mt-5">
+            <p>I’ve spent about one year on improving my skills in website development using <b>PHP</b>. Now I'm still learning <b>Javascript</b></p>
+            <p>I’m pretty confident in building apps using these tools:</p>
+            <div class="skill-image mt-5">
+              <img src="assets/images/bootstrap.svg" alt="" />
+              <img src="assets/images/laravel.png" alt="" />
+              <img src="assets/images/ci4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Get In Touch -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h3 class="title up">
+              Get In Touch</h3>
+            <div class="border-title-yellow" data-aos="fade-down" data-aos-duration="1200"></div>
+            <p id="desc-contact" data-aos="fade-down" data-aos-duration="1400">Click one of my contacts to say hello.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 detail-contact text-right">
+            <a href="https://wa.me/6285600294361" target="_blank">+6285-600-294-361 <i class="fab fa-whatsapp"></i></a>
+
+            <a href="mailto:aryakrisna078@gmail.com" target="_blank">aryakrisna078@gmail.com </i><i class="fas fa-envelope"></i></a>
+
+            <a href="https://www.instagram.com/aryakpt/" target="_blank">aryakpt <i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.linkedin.com/in/arya-krisna-putra-2028411aa/" target="_blank">Arya Krisna Putra <i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Get In Touch -->
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; 2021 Arya Krisna</p>
+            <p>Made with love <i class="fas fa-heart" style=" animation: changeColor 3s linear infinite;"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Optional JavaScript; choose one of the two! -->
-    
+
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -191,9 +236,8 @@
     -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <script src="assets/js/script.js"></script>
-    
-</body>
+  </body>
 </html>

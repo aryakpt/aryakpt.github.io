@@ -1,55 +1,37 @@
+//=============== Home =====================//
+// const model = document.querySelector(".model");
+// const container = document.querySelector("#home .container");
 
+// container.addEventListener("mousemove", (e) => {
+//   let xAxis = (window.innerWidth / 2 - e.pageX) / 15;
+//   let yAxis = (window.innerHeight / 2 - e.pageY) / 20;
 
-
-
-
-// $('.scroll-page').on('click', function(e){
-//     //ambil isi href page-scroll
-//     var tujuan = $(this).attr('href');
-//     //tangkap elemen tujuan
-//     var elemenTujuan = $(tujuan);
-    
-//     $('body').animate({
-//         scrollTop: elemenTujuan.offset().top
-//     });
-//     e.preventDefault();  
+//   console.log(xAxis, yAxis);
+//   model.style.transform = "rotateY(" + xAxis + "deg) rotateX(" + yAxis + "deg)";
 // });
 
+// container.addEventListener("mouseleave", (e) => {
+//   model.style.transform = "rotateY(0deg) rotateX(0deg)";
+//   model.style.transition = "all ease-in 0.5s";
+// });
 
-// function navSlide(){
-//     const burger = document.querySelector('.menu-toggle');
-//     const nav = document.querySelector('.nav-links');
-    
-//     burger.addEventListener('click',() => {
-//         //Toggle Nav
-//         nav.classList.toggle('nav-active');
-//         // Burger Animate
-//         burger.classList.toggle('toggle');
-//     });
+// container.addEventListener("mousein", (e) => {
+//   model.style.transition = "none";
+// });
+const titleAnimate = document.querySelector(".title-animate");
+window.addEventListener("scroll", (e) => {
+  const nav = document.querySelector("nav");
+  const position = window.scrollY;
+  // console.log(window.innerHeight, window.scrollY);
 
-// }
+  nav.classList.toggle("scrolled-down", position > 0);
 
-// $(document).ready(function(){
-//     $(window).scroll(function(){
-//         var scroll = $(window).scrollTop();
-//         if (scroll > 700) {
-//             $("nav").css("top" , "0px");
-//             $("nav").css("opacity" , "1");
-//         } else {
-//             $("nav").css("top" , "-50px");
-//         }
-//         dh = $(document).height();
-//         wh = $(window).height();
-//         var height = (scroll / (dh-wh)) * 60;
-//         var top = 50 - (scroll / (dh-wh)) * 30;
-//         $(".scrollBar").css("height" , height + "vh");
-//         $(".scrollBar").css("top" , top + "vh");
-//     })
-// })
+  const titleAnimate = document.querySelector(".title-animate");
+  titleAnimate.style.right = position / 1.5 + "px";
+  titleAnimate.style.letterSpacing = position / 15 + "px";
 
-// function call(){
-//     // navSlide();
-// }
-// call();
-
-
+  const titleAnimate2 = document.querySelector(".title-animate2");
+  console.log(position / 3);
+  titleAnimate2.style.left = position / 5 + "px";
+  titleAnimate2.style.letterSpacing = position / 100 + "px";
+});
