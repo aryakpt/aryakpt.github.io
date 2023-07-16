@@ -1,0 +1,25 @@
+{
+  "name": "aryakpt.github.io",
+  "version": "1.0.0",
+  "description": "This is my first personal web portfolio, i just use HTML, CSS, and JavaScript to built this website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryakpt/aryakpt.github.io.git"
+  },
+  "keywords": [],
+  "author": "aryakpt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aryakpt/aryakpt.github.io/issues"
+  },
+  "homepage": "https://github.com/aryakpt/aryakpt.github.io#readme",
+  "dependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-server": "^0.1.2"
+  }
+}

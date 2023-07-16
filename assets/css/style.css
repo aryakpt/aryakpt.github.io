@@ -5,11 +5,13 @@ html {
 * {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   box-sizing: border-box;
-  /* font-size: 1.1rem; */
 }
 
+body {
+  overflow-x: hidden;
+}
 /* Button */
 .btn {
   text-decoration: none;
@@ -148,6 +150,7 @@ nav {
 
 .text-container h3 {
   font-weight: 600;
+  letter-spacing: 4px;
   color: #ffb633;
 }
 .text-container h3 span {
@@ -176,10 +179,10 @@ nav {
   text-decoration: none;
 }
 
-.text-container a:hover {
+/* .text-container a:hover {
   letter-spacing: 1px;
   transition: ease-in 0.1s;
-}
+} */
 
 .model {
   text-align: center;
@@ -188,24 +191,35 @@ nav {
   width: 80%;
   background-color: #1f1f1f;
   border-radius: 20px;
-  background: linear-gradient(45deg, #ffb633 25%, #444 25%, #444 50%, #ffb633 50%, #ffb633 75%, #444 75%, #444 100%);
+  background: linear-gradient(
+    45deg,
+    #ffb633 25%,
+    #444 25%,
+    #444 50%,
+    #ffb633 50%,
+    #ffb633 75%,
+    #444 75%,
+    #444 100%
+  );
   background-size: 40px 40px;
   filter: grayscale(100%);
   animation: animateBg 2s linear infinite;
-  /* animation-play-state: paused; */
-  transition: filter 1s;
+  animation-play-state: paused;
+  transition: all 2s;
 }
-.model:hover {
+
+/* .model:hover {
   animation: animateBg 0.75s linear infinite;
   filter: grayscale(0%);
-}
+} */
+
 .model img {
-  width: 70%;
+  width: 80%;
   transition: ease-in 0.2s;
 }
-.model:hover img {
+/* .model:hover img {
   width: 90%;
-}
+} */
 
 @keyframes animateBg {
   0% {
@@ -327,6 +341,12 @@ nav {
   line-height: 1.5rem;
   color: rgb(190, 190, 190);
 }
+.skill-image {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .skill-image img {
   width: 5rem;
   height: 5rem;
@@ -335,6 +355,7 @@ nav {
   filter: grayscale(100%);
   transition: 0.3s;
 }
+
 .skill-image img:hover {
   transform: scale(1.1);
   margin: 0px 10px;
