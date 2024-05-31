@@ -27,7 +27,16 @@ const renderContacts = (socialMedias) => {
   });
 };
 
+const navbarAnimation = () => {
+  window.addEventListener("scroll", () => {
+    const position = window.scrollY;
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("scrolled-down", position > 0);
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
+  navbarAnimation();
   renderProject(projects);
   renderDetailContacts(socialMedias);
   renderContacts(socialMedias);
