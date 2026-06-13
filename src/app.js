@@ -1,4 +1,6 @@
-import createElementUtil from "./utils/createElementUtil.js";
+import { createSkillChip } from "./utils/createElementUtil.js";
+import { createProjectCard } from "./components/projectCard.js";
+import { createBlogCard } from "./components/blogCard.js";
 import { createNavbar, initNavbar } from "./components/navbar.js";
 import { createFooter } from "./components/footer.js";
 
@@ -23,7 +25,7 @@ function pickRandomProjects(list) {
 function renderSkills() {
   const container = document.getElementById("skills-list");
   skills.forEach((skill) => {
-    container.append(createElementUtil.createSkillChip(skill));
+    container.append(createSkillChip(skill));
   });
 }
 
@@ -31,14 +33,14 @@ function renderProjects(projects) {
   const container = document.getElementById("project-list");
   const selected = pickRandomProjects(projects);
   selected.forEach((project) => {
-    container.append(createElementUtil.createProjectCard(project));
+    container.append(createProjectCard(project));
   });
 }
 
 function renderBlogs(blogs) {
   const container = document.getElementById("blog-list");
   blogs.forEach((blog) => {
-    container.append(createElementUtil.createBlogCard(blog));
+    container.append(createBlogCard(blog));
   });
 }
 

@@ -1,4 +1,4 @@
-import createElementUtil from "./utils/createElementUtil.js";
+import { createProjectCard } from "./components/projectCard.js";
 import { createNavbar, initNavbar } from "./components/navbar.js";
 import { createFooter } from "./components/footer.js";
 
@@ -26,7 +26,7 @@ function renderGrid(projects) {
   }
 
   filtered.forEach((project) => {
-    grid.append(createElementUtil.createProjectCard(project));
+    grid.append(createProjectCard(project));
   });
 }
 
