@@ -1,6 +1,6 @@
 export function createBlogCard(blog) {
   const hasDetail = blog.slug && blog.content;
-  const href = hasDetail ? `/blogs/${blog.slug}/` : (blog.externalUrl ?? null);
+  const href = hasDetail ? `/blogs/?post=${blog.slug}` : (blog.externalUrl ?? null);
   const dateLabel = blog.created_at
     ? new Date(blog.created_at).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })
     : blog.date ?? "Coming Soon";

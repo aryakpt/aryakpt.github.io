@@ -3,64 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/src/styles/base.css" />
     <link rel="stylesheet" href="/src/styles/navbar.css" />
     <link rel="stylesheet" href="/src/styles/blogCard.css" />
     <link rel="stylesheet" href="/src/styles/footer.css" />
     <link rel="stylesheet" href="/src/styles/blogs.css" />
+    <link rel="stylesheet" href="/src/styles/blogDetail.css" />
     <link rel="icon" href="/src/assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/src/assets/favicon.svg" />
     <title>Blog — Arya Krisna Putra</title>
   </head>
   <body>
-    <!-- NAV — rendered by JS -->
     <div id="nav-root"></div>
-
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-      <div class="page-header-inner">
-        <a href="/" class="back-link"><span>←</span> Back to Home</a>
-        <p class="section-label">BLOG</p>
-        <h1 class="page-header-title">Writings &amp; Research Notes</h1>
-        <p class="page-header-desc">
-          Technical articles, research summaries, and engineering insights — from frontend architecture to AI research.
-        </p>
-      </div>
-    </section>
-
-    <!-- FILTER -->
-    <div class="blogs-page-filter">
-      <div class="blogs-page-filter-inner">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="AI Research">AI Research</button>
-        <button class="filter-btn" data-filter="Engineering">Engineering</button>
-        <button class="filter-btn" data-filter="Tutorial">Tutorial</button>
-      </div>
-    </div>
-
-    <!-- BLOG GRID -->
-    <section class="blogs-page">
-      <div class="blogs-page-inner">
-        <div class="blogs-grid" id="blogs-grid">
-          <!-- Rendered by JS -->
-        </div>
-        <p class="blog-coming-soon" id="coming-soon-note" style="display:none">
-          Articles coming soon — more posts will be published here.
-        </p>
-      </div>
-    </section>
-
-    <!-- FOOTER — rendered by JS -->
+    <div id="blogs-page-root"></div>
     <div id="footer-root"></div>
-
-    <script src="/src/blogs.js" type="module"></script>
+    <script src="/src/blogs-page.js" type="module"></script>
   </body>
 </html>
