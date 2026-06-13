@@ -1,5 +1,3 @@
-import projects from "./constants/projects.js";
-import blogs from "./constants/blogs.js";
 import createElementUtil from "./utils/createElementUtil.js";
 
 const skills = [
@@ -8,11 +6,10 @@ const skills = [
   "Bootstrap", "Tailwind CSS", "Material UI", "Ant Design", "HTML/CSS",
 ];
 
-function renderSkills() {
-  const container = document.getElementById("skills-list");
-  skills.forEach((skill) => {
-    container.append(createElementUtil.createSkillChip(skill));
-  });
+async function fetchData(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`);
+  return res.json();
 }
 
 function pickRandomProjects(list) {
@@ -21,7 +18,14 @@ function pickRandomProjects(list) {
   return shuffled.slice(0, count);
 }
 
-function renderProjects() {
+function renderSkills() {
+  const container = document.getElementById("skills-list");
+  skills.forEach((skill) => {
+    container.append(createElementUtil.createSkillChip(skill));
+  });
+}
+
+function renderProjects(projects) {
   const container = document.getElementById("project-list");
   const selected = pickRandomProjects(projects);
   selected.forEach((project) => {
@@ -29,7 +33,7 @@ function renderProjects() {
   });
 }
 
-function renderBlogs() {
+function renderBlogs(blogs) {
   const container = document.getElementById("blog-list");
   blogs.forEach((blog) => {
     container.append(createElementUtil.createBlogCard(blog));
@@ -79,7 +83,6 @@ function initNavbar() {
     toggle.innerHTML = isOpen ? "&#10005;" : "&#9776;";
   });
 
-  // Close mobile menu when a link is clicked
   mobileMenu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       mobileMenu.classList.remove("open");
@@ -87,17 +90,13 @@ function initNavbar() {
     });
   });
 
-  // Active nav link on scroll
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-links a");
 
   window.addEventListener("scroll", () => {
     const scrollY = window.scrollY + 100;
     sections.forEach((section) => {
-      if (
-        scrollY >= section.offsetTop &&
-        scrollY < section.offsetTop + section.offsetHeight
-      ) {
+      if (scrollY >= section.offsetTop && scrollY < section.offsetTop + section.offsetHeight) {
         navLinks.forEach((link) => {
           link.classList.toggle("active", link.getAttribute("href") === `#${section.id}`);
         });
@@ -106,10 +105,16 @@ function initNavbar() {
   }, { passive: true });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  renderSkills();
-  renderProjects();
-  renderBlogs();
-  initCarousel();
+document.addEventListener("DOMContentLoaded", async () => {
   initNavbar();
+  renderSkills();
+  initCarousel();
+
+  const [projects, blogs] = await Promise.all([
+    fetchData("./src/data/projects.json"),
+    fetchData("./src/data/blogs.json"),
+  ]);
+
+  renderProjects(projects);
+  renderBlogs(blogs);
 });

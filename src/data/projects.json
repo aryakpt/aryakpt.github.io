@@ -1,0 +1,122 @@
+[
+  {
+    "tag": "INDUSTRY",
+    "title": "Rock Imager Web App",
+    "image": null,
+    "description": "Web application for Formulatrix's Rock Imager with design system implementation and real-time SignalR integration.",
+    "techs": ["React", "Redux", "SignalR"],
+    "status": "Professional",
+    "website": "",
+    "github": ""
+  },
+  {
+    "tag": "INDUSTRY",
+    "title": "Superapp Dashboard",
+    "image": null,
+    "description": "Engagement dashboard for SUPER built with React and TypeScript, including design system management.",
+    "techs": ["React", "TypeScript", "Ant Design"],
+    "status": "Professional",
+    "website": "",
+    "github": ""
+  },
+  {
+    "tag": "MOBILE",
+    "title": "Superapp Flutter Migration",
+    "image": null,
+    "description": "Cross-platform migration from Ionic to Flutter, focusing on mission and loyalty program modules.",
+    "techs": ["Flutter", "Dart"],
+    "status": "Professional",
+    "website": "",
+    "github": ""
+  },
+  {
+    "tag": "WEB APP",
+    "title": "aMovies",
+    "image": "./src/assets/images/aMovies.png",
+    "description": "aMovies is a Netflix clone built with React. I learned React by watching YouTube videos to understand the folder structure, component lifecycle, and other key concepts.",
+    "techs": ["React", "CSS", "JavaScript"],
+    "status": "Personal",
+    "website": "https://amovies-aryakpt.netlify.app/",
+    "github": "https://github.com/aryakpt/aMovies"
+  },
+  {
+    "tag": "WEB APP",
+    "title": "Pokego",
+    "image": "./src/assets/images/pokego.png",
+    "description": "Pokego is a website that provides detailed information about Pokémon and features a Pokémon guessing game.",
+    "techs": ["JavaScript", "CSS", "HTML"],
+    "status": "Personal",
+    "website": "https://pokego-aryakpt.netlify.app/",
+    "github": "https://github.com/aryakpt/pokego"
+  },
+  {
+    "tag": "INDUSTRY",
+    "title": "ISNPINSA Conference",
+    "image": "./src/assets/images/inspinsa.png",
+    "description": "International Seminar on New Paradigm and Innovation on Natural Sciences and its Application (ISNPINSA) is an annual conference organized by the Faculty of Science and Mathematics at Diponegoro University.",
+    "techs": ["PHP", "Laravel", "Bootstrap"],
+    "status": "Professional",
+    "website": "https://isnpinsa.undip.ac.id/",
+    "github": ""
+  },
+  {
+    "tag": "INDUSTRY",
+    "title": "Diponegoro Chemistry Fair",
+    "image": "./src/assets/images/dcf.png",
+    "description": "Diponegoro Chemistry Fair is an event featuring a high school chemistry competition, a national high school scientific writing competition, and a national seminar, organized by the Chemistry Student Association of Diponegoro University.",
+    "techs": ["HTML", "CSS", "JavaScript"],
+    "status": "Professional",
+    "website": "",
+    "github": ""
+  },
+  {
+    "tag": "WEB APP",
+    "title": "FSM Music Festival",
+    "image": "./src/assets/images/fmsmusicfest.png",
+    "description": "FSM Music Festival is a music concert that, in 2021, features the theme \"Javanese Retro of Love.\"",
+    "techs": ["HTML", "CSS", "JavaScript"],
+    "status": "Personal",
+    "website": "https://aryakpt.github.io/fsmfestival/",
+    "github": "https://github.com/aryakpt/fsmfestival"
+  },
+  {
+    "tag": "WEB APP",
+    "title": "P2M FKG UGM",
+    "image": "./src/assets/images/p2m.png",
+    "description": "P2M FKG UGM is a web application I developed during my Field Work Program (PKL).",
+    "techs": ["PHP", "CodeIgniter", "Bootstrap"],
+    "status": "Professional",
+    "website": "",
+    "github": ""
+  },
+  {
+    "tag": "WEB APP",
+    "title": "KoKeRu",
+    "image": "./src/assets/images/kokeru.png",
+    "description": "KoKeRu is a web application for room cleanliness control that coordinates all cleaning activities in a specific office. This project was one of my campus assignments.",
+    "techs": ["PHP", "Laravel", "Bootstrap"],
+    "status": "Academic",
+    "website": "",
+    "github": "https://github.com/dimaspndw/KoKeRu"
+  },
+  {
+    "tag": "WEB APP",
+    "title": "Aurora Blog",
+    "image": "./src/assets/images/aurora.png",
+    "description": "Aurora is a simple blog web application. This project was one of my assignments at university.",
+    "techs": ["PHP", "CodeIgniter", "Bootstrap"],
+    "status": "Academic",
+    "website": "",
+    "github": "https://github.com/aryakpt/tubesPBPweb"
+  },
+  {
+    "tag": "COMING SOON",
+    "title": "Next Project",
+    "image": "./src/assets/images/csoon.png",
+    "description": "Tunggu project saya selanjutnya ya!",
+    "techs": [],
+    "status": "In Progress",
+    "website": "",
+    "github": ""
+  }
+]
