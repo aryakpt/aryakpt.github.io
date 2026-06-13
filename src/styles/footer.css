@@ -1,0 +1,23 @@
+.site-footer {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 32px 90px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.site-footer span {
+  font-size: 13px;
+  color: var(--low);
+}
+
+@media screen and (max-width: 900px) {
+  .site-footer {
+    padding: 24px 24px 16px;
+    justify-content: center;
+    text-align: center;
+  }
+}

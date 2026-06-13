@@ -1,0 +1,88 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(12, 12, 15, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: padding 0.3s ease;
+}
+
+.nav-logo {
+  background: var(--accent);
+  border-radius: 8px;
+  padding: 5px 9px;
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--bg);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--mid);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--hi);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--hi);
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.nav-mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-mobile-menu a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--mid);
+  text-decoration: none;
+}
+
+.nav-mobile-menu.open {
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    padding: 16px 24px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}

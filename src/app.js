@@ -16,10 +16,8 @@ async function fetchData(path) {
   return res.json();
 }
 
-function pickRandomProjects(list) {
-  const count = Math.random() < 0.5 ? 4 : 5;
-  const shuffled = [...list].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, count);
+function pickRandom(list, count) {
+  return [...list].sort(() => Math.random() - 0.5).slice(0, count);
 }
 
 function renderSkills() {
@@ -31,15 +29,15 @@ function renderSkills() {
 
 function renderProjects(projects) {
   const container = document.getElementById("project-list");
-  const selected = pickRandomProjects(projects);
-  selected.forEach((project) => {
+  const count = Math.random() < 0.5 ? 4 : 5;
+  pickRandom(projects, count).forEach((project) => {
     container.append(createProjectCard(project));
   });
 }
 
 function renderBlogs(blogs) {
   const container = document.getElementById("blog-list");
-  blogs.forEach((blog) => {
+  pickRandom(blogs, 3).forEach((blog) => {
     container.append(createBlogCard(blog));
   });
 }

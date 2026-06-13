@@ -10,22 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <!-- Styles -->
     <link rel="stylesheet" href="./src/styles/base.css" />
     <link rel="stylesheet" href="./src/styles/navbar.css" />
-    <link rel="stylesheet" href="./src/styles/projectCard.css" />
+    <link rel="stylesheet" href="./src/styles/blogCard.css" />
     <link rel="stylesheet" href="./src/styles/footer.css" />
-    <link rel="stylesheet" href="./src/styles/projects.css" />
+    <link rel="stylesheet" href="./src/styles/blogs.css" />
     <link rel="icon" href="./src/assets/images/logotab.png" />
-    <title>Projects — Arya Krisna Putra</title>
+    <title>Blog — Arya Krisna Putra</title>
   </head>
   <body>
     <!-- NAV — rendered by JS -->
@@ -35,37 +27,39 @@
     <section class="page-header">
       <div class="page-header-inner">
         <a href="./index.html" class="back-link"><span>←</span> Back to Home</a>
-        <p class="section-label">PORTFOLIO</p>
-        <h1 class="page-header-title">All Projects</h1>
+        <p class="section-label">BLOG</p>
+        <h1 class="page-header-title">Writings &amp; Research Notes</h1>
         <p class="page-header-desc">
-          A complete list of projects I've built — from industry work to personal experiments and academic assignments.
+          Technical articles, research summaries, and engineering insights — from frontend architecture to AI research.
         </p>
       </div>
     </section>
 
     <!-- FILTER -->
-    <div class="projects-page-filter">
-      <div class="projects-page-filter-inner">
+    <div class="blogs-page-filter">
+      <div class="blogs-page-filter-inner">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="Professional">Professional</button>
-        <button class="filter-btn" data-filter="Personal">Personal</button>
-        <button class="filter-btn" data-filter="Academic">Academic</button>
-        <button class="filter-btn" data-filter="In Progress">In Progress</button>
+        <button class="filter-btn" data-filter="AI Research">AI Research</button>
+        <button class="filter-btn" data-filter="Engineering">Engineering</button>
+        <button class="filter-btn" data-filter="Tutorial">Tutorial</button>
       </div>
     </div>
 
-    <!-- PROJECT GRID -->
-    <section class="projects-page">
-      <div class="projects-page-inner">
-        <div class="projects-grid" id="projects-grid">
+    <!-- BLOG GRID -->
+    <section class="blogs-page">
+      <div class="blogs-page-inner">
+        <div class="blogs-grid" id="blogs-grid">
           <!-- Rendered by JS -->
         </div>
+        <p class="blog-coming-soon" id="coming-soon-note" style="display:none">
+          Articles coming soon — more posts will be published here.
+        </p>
       </div>
     </section>
 
     <!-- FOOTER — rendered by JS -->
     <div id="footer-root"></div>
 
-    <script src="./src/projects.js" type="module"></script>
+    <script src="./src/blogs.js" type="module"></script>
   </body>
 </html>
