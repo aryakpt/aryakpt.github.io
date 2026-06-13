@@ -24,38 +24,8 @@
     <title>Arya Krisna Putra</title>
   </head>
   <body>
-    <!-- NAV -->
-    <nav id="navbar">
-      <a class="nav-logo" href="#home">AK</a>
-      <div class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-        <a
-          href="https://docs.google.com/document/d/1cpi7Gid61lW3T3jTxbhPf_bfajchCAo8/edit?usp=sharing&ouid=103277840525621454634&rtpof=true&sd=true"
-          target="_blank"
-          class="btn-outline"
-          >Resume</a
-        >
-      </div>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-    </nav>
-    <div class="nav-mobile-menu" id="nav-mobile-menu">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
-      <a
-        href="https://docs.google.com/document/d/1cpi7Gid61lW3T3jTxbhPf_bfajchCAo8/edit?usp=sharing&ouid=103277840525621454634&rtpof=true&sd=true"
-        target="_blank"
-        class="btn-outline"
-        style="align-self: flex-start"
-        >Resume</a
-      >
-    </div>
+    <!-- NAV — rendered by JS -->
+    <div id="nav-root"></div>
 
     <!-- HERO -->
     <section class="hero" id="home">
@@ -162,6 +132,9 @@
         <div class="carousel" id="project-list">
           <!-- Rendered by JS -->
         </div>
+        <div class="projects-cta">
+          <a href="./projects.html" class="btn-outline">View all projects <span>→</span></a>
+        </div>
       </div>
     </section>
 
@@ -192,12 +165,11 @@
             <a href="https://wa.me/6285600294361" target="_blank" class="btn-outline">WhatsApp</a>
           </div>
         </div>
-        <div class="footer">
-          <span>© 2025 Arya Krisna Putra</span>
-          <span>Engineer · Researcher · Educator</span>
-        </div>
       </div>
     </section>
+
+    <!-- FOOTER — rendered by JS -->
+    <div id="footer-root"></div>
 
     <script src="./src/app.js" type="module"></script>
   </body>

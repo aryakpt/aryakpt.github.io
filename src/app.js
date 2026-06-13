@@ -1,4 +1,6 @@
 import createElementUtil from "./utils/createElementUtil.js";
+import { createNavbar, initNavbar } from "./components/navbar.js";
+import { createFooter } from "./components/footer.js";
 
 const skills = [
   "JavaScript", "TypeScript", "ReactJS", "Dart", "Flutter",
@@ -74,39 +76,14 @@ function initCarousel() {
   carousel.addEventListener("touchend", onDragEnd);
 }
 
-function initNavbar() {
-  const toggle = document.getElementById("nav-toggle");
-  const mobileMenu = document.getElementById("nav-mobile-menu");
-
-  toggle.addEventListener("click", () => {
-    const isOpen = mobileMenu.classList.toggle("open");
-    toggle.innerHTML = isOpen ? "&#10005;" : "&#9776;";
-  });
-
-  mobileMenu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      mobileMenu.classList.remove("open");
-      toggle.innerHTML = "&#9776;";
-    });
-  });
-
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-links a");
-
-  window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY + 100;
-    sections.forEach((section) => {
-      if (scrollY >= section.offsetTop && scrollY < section.offsetTop + section.offsetHeight) {
-        navLinks.forEach((link) => {
-          link.classList.toggle("active", link.getAttribute("href") === `#${section.id}`);
-        });
-      }
-    });
-  }, { passive: true });
-}
-
 document.addEventListener("DOMContentLoaded", async () => {
-  initNavbar();
+  const navRoot = document.getElementById("nav-root");
+  const { nav, mobileMenu } = createNavbar("home");
+  navRoot.replaceWith(nav, mobileMenu);
+  initNavbar("home");
+
+  document.getElementById("footer-root").replaceWith(createFooter());
+
   renderSkills();
   initCarousel();
 
