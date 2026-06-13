@@ -44,7 +44,7 @@
     "title": "Pokego",
     "image": "./src/assets/images/pokego.png",
     "description": "Pokego is a website that provides detailed information about Pokémon and features a Pokémon guessing game.",
-    "techs": ["JavaScript", "CSS", "HTML"],
+    "techs": ["React", "Typescript"],
     "status": "Personal",
     "website": "https://pokego-aryakpt.netlify.app/",
     "github": "https://github.com/aryakpt/pokego"
@@ -54,7 +54,7 @@
     "title": "ISNPINSA Conference",
     "image": "./src/assets/images/inspinsa.png",
     "description": "International Seminar on New Paradigm and Innovation on Natural Sciences and its Application (ISNPINSA) is an annual conference organized by the Faculty of Science and Mathematics at Diponegoro University.",
-    "techs": ["PHP", "Laravel", "Bootstrap"],
+    "techs": ["PHP", "CodeIgniter 4", "Bootstrap"],
     "status": "Professional",
     "website": "https://isnpinsa.undip.ac.id/",
     "github": ""
@@ -84,7 +84,7 @@
     "title": "P2M FKG UGM",
     "image": "./src/assets/images/p2m.png",
     "description": "P2M FKG UGM is a web application I developed during my Field Work Program (PKL).",
-    "techs": ["PHP", "CodeIgniter", "Bootstrap"],
+    "techs": ["PHP", "CodeIgniter 4", "Bootstrap"],
     "status": "Professional",
     "website": "",
     "github": ""
@@ -94,7 +94,7 @@
     "title": "KoKeRu",
     "image": "./src/assets/images/kokeru.png",
     "description": "KoKeRu is a web application for room cleanliness control that coordinates all cleaning activities in a specific office. This project was one of my campus assignments.",
-    "techs": ["PHP", "Laravel", "Bootstrap"],
+    "techs": ["PHP", "CodeIgniter 3", "Bootstrap"],
     "status": "Academic",
     "website": "",
     "github": "https://github.com/dimaspndw/KoKeRu"
@@ -104,19 +104,9 @@
     "title": "Aurora Blog",
     "image": "./src/assets/images/aurora.png",
     "description": "Aurora is a simple blog web application. This project was one of my assignments at university.",
-    "techs": ["PHP", "CodeIgniter", "Bootstrap"],
+    "techs": ["PHP Native", "Bootstrap"],
     "status": "Academic",
     "website": "",
     "github": "https://github.com/aryakpt/tubesPBPweb"
-  },
-  {
-    "tag": "COMING SOON",
-    "title": "Next Project",
-    "image": "./src/assets/images/csoon.png",
-    "description": "Tunggu project saya selanjutnya ya!",
-    "techs": [],
-    "status": "In Progress",
-    "website": "",
-    "github": ""
   }
 ]

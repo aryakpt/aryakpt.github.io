@@ -88,8 +88,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   initCarousel();
 
   const [projects, blogs] = await Promise.all([
-    fetchData("./src/data/projects.json"),
-    fetchData("./src/data/blogs.json"),
+    fetchData("/src/data/projects.json"),
+    fetchData("/src/data/blogs.json"),
   ]);
 
   renderProjects(projects);

@@ -1,9 +1,9 @@
 const NAV_LINKS = [
-  { label: "Home",     href: "./index.html#home" },
-  { label: "About",    href: "./index.html#about" },
-  { label: "Projects", href: "./projects.html" },
-  { label: "Blog",     href: "./blogs.html" },
-  { label: "Contact",  href: "./index.html#contact" },
+  { label: "Home",     href: "/#home" },
+  { label: "About",    href: "/#about" },
+  { label: "Projects", href: "/projects/" },
+  { label: "Blog",     href: "/blogs/" },
+  { label: "Contact",  href: "/#contact" },
 ];
 
 const RESUME_HREF =
@@ -20,7 +20,7 @@ export function createNavbar(activePage = "home") {
   const nav = document.createElement("nav");
   nav.id = "navbar";
   nav.innerHTML = `
-    <a class="nav-logo" href="./index.html">AK</a>
+    <a class="nav-logo" href="/">AK</a>
     <div class="nav-links">
       ${buildLinks(activePage)}
       <a href="${RESUME_HREF}" target="_blank" class="btn-outline">Resume</a>
@@ -73,7 +73,7 @@ export function initNavbar(activePage = "home") {
               const href = link.getAttribute("href");
               link.classList.toggle(
                 "active",
-                href === `./index.html#${section.id}` || href === `#${section.id}`
+                href === `/#${section.id}` || href === `#${section.id}`
               );
             });
           }

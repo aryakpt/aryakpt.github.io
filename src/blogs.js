@@ -6,7 +6,7 @@ let allBlogs = [];
 let activeFilter = "all";
 
 async function fetchBlogs() {
-  const res = await fetch("./src/data/blogs.json");
+  const res = await fetch("/src/data/blogs.json");
   if (!res.ok) throw new Error(`Failed to fetch blogs: ${res.status}`);
   return res.json();
 }

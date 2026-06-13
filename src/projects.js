@@ -6,7 +6,7 @@ let allProjects = [];
 let activeFilter = "all";
 
 async function fetchProjects() {
-  const res = await fetch("./src/data/projects.json");
+  const res = await fetch("/src/data/projects.json");
   if (!res.ok) throw new Error(`Failed to fetch projects: ${res.status}`);
   return res.json();
 }
