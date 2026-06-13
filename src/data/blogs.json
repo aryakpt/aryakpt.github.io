@@ -1,32 +1,12 @@
 [
   {
-    "title": "Exploring Vision Transformers for IoT Edge Devices",
-    "excerpt": "Adapting ViT architectures for resource-constrained IoT deployments with practical benchmarks.",
+    "slug": "yolov12-attention-centric-deteksi-objek-real-time",
+    "title": "YOLOv12: Attention-Centric untuk Deteksi Objek Real-Time",
+    "excerpt": "YOLOv12 memperkenalkan paradigma baru dalam deteksi objek real-time dengan mengintegrasikan attention mechanism sebagai komponen inti, melampaui akurasi generasi YOLO sebelumnya.",
     "category": "AI Research",
-    "date": "Coming Soon"
-  },
-  {
-    "title": "Building Scalable React Apps with Clean Architecture",
-    "excerpt": "Structuring large-scale React applications using domain-driven design patterns.",
-    "category": "Engineering",
-    "date": "Coming Soon"
-  },
-  {
-    "title": "Deep Learning in Computer Vision: A Practitioner's Guide",
-    "excerpt": "From CNNs to attention-based models — a hands-on walkthrough for applied CV.",
-    "category": "Tutorial",
-    "date": "Coming Soon"
-  },
-  {
-    "title": "Deep Learning in Computer Vision: A Practitioner's Guide",
-    "excerpt": "From CNNs to attention-based models — a hands-on walkthrough for applied CV.",
-    "category": "Tutorial",
-    "date": "Coming Soon"
-  },
-  {
-    "title": "Deep Learning in Computer Vision: A Practitioner's Guide",
-    "excerpt": "From CNNs to attention-based models — a hands-on walkthrough for applied CV.",
-    "category": "Tutorial",
-    "date": "Coming Soon"
+    "created_at": "2025-07-14",
+    "updated_at": "2025-07-14",
+    "externalUrl": "https://socs.binus.ac.id/2025/07/14/yolov12-attention-centric-untuk-deteksi-objek-real-time/",
+    "content": "<p>YOLO (<em>You Only Look Once</em>) merupakan metodologi deteksi objek yang banyak diadopsi karena keseimbangan antara kecepatan inferensi dan akurasi deteksi. Secara tradisional, peningkatan YOLO bergantung pada peningkatan arsitektur berbasis <em>Convolutional Neural Network</em> (CNN). YOLOv12 memperkenalkan pergeseran paradigma dengan mengintegrasikan <em>attention mechanism</em> secara prominan sebagai komponen inti dalam arsitektur deteksi objek <em>real-time</em>.</p>\n\n<h2>Peran <em>Attention</em> dalam Deteksi Objek <em>Real-Time</em></h2>\n\n<p><em>Attention mechanism</em> memiliki kemampuan pemodelan yang kuat, namun aplikasi <em>real-time</em> menghadapi kendala kompleksitas komputasi. Pendekatan berbasis CNN telah mendominasi implementasi YOLO karena efisiensi komputasinya dibandingkan model berbasis <em>attention</em>.</p>\n\n<p>YOLOv12 mengatasi tantangan ini sambil mempertahankan kecepatan inferensi yang sebanding dengan CNN, namun mencapai akurasi lebih tinggi dari generasi YOLO sebelumnya melalui manfaat <em>attention</em> yang terintegrasi.</p>\n\n<h2>Inovasi Utama YOLOv12</h2>\n\n<p>Tiga inovasi inti mendefinisikan YOLOv12:</p>\n\n<h3>1. <em>Area Attention Mechanism</em></h3>\n\n<p>Metode ini mengurangi kompleksitas <em>attention</em> dengan membagi <em>feature map</em> menjadi area horizontal atau vertikal. Pendekatan ini secara signifikan mengurangi biaya komputasi <em>attention</em> dari kompleksitas kuadratik menjadi setengahnya, sambil mempertahankan <em>receptive field</em> yang besar dan peningkatan kecepatan.</p>\n\n<h3>2. <em>Residual Efficient Layer Aggregation Networks</em> (R-ELAN)</h3>\n\n<p>ELAN sebelumnya meningkatkan agregasi fitur tetapi menghadapi tantangan optimasi pada model besar berbasis <em>attention</em>. R-ELAN menggabungkan <em>residual connections</em> dan teknik <em>scaling</em> yang ditingkatkan, memungkinkan optimasi stabil model yang lebih besar seperti YOLOv12-L dan YOLOv12-X.</p>\n\n<h3>3. Optimalisasi Arsitektur untuk <em>Attention Mechanism</em></h3>\n\n<ul>\n  <li>Menerapkan FlashAttention untuk resolusi <em>bottleneck</em> akses memori</li>\n  <li>Menghapus <em>positional encoding</em> untuk efisiensi</li>\n  <li>Menyesuaikan rasio MLP dari 4 menjadi 1.2 untuk distribusi komputasi yang seimbang</li>\n  <li>Mengurangi kedalaman blok untuk optimasi yang lebih baik</li>\n  <li>Memaksimalkan penggunaan operator konvolusional</li>\n</ul>\n\n<h2>Performa YOLOv12</h2>\n\n<p>Evaluasi dataset COCO menunjukkan <em>trade-off</em> akurasi-latensi yang mengesankan. YOLOv12-N mencapai 40.6% mAP dengan latensi inferensi 1.64 ms pada GPU T4, melampaui YOLOv10-N dan YOLOv11-N masing-masing sebesar 2.1% dan 1.2% mAP pada kecepatan yang sebanding. Perbandingan dengan model <em>state-of-the-art</em> seperti RT-DETR menunjukkan keunggulan YOLOv12 yang jelas dalam akurasi, kecepatan, dan efisiensi parameter model.</p>\n\n<h2>Kesimpulan</h2>\n\n<p>YOLOv12 merevolusi seri YOLO dengan memperkenalkan <em>attention mechanism</em> yang diadaptasi secara optimal untuk kebutuhan <em>real-time</em>. Inovasi gabungan Area Attention, R-ELAN, dan optimalisasi arsitektur menghasilkan <em>framework</em> deteksi objek yang cepat dan akurat, menjadikan YOLOv12 sebagai standar baru dalam deteksi objek <em>real-time</em>.</p>\n\n<h2>Referensi</h2>\n\n<ol>\n  <li>Ultralytics YOLOv12 Documentation</li>\n  <li>Tian, Y., Ye, Q., &amp; Doermann, D. (2025). <em>YOLOv12: Attention-Centric Real-Time Object Detectors</em></li>\n  <li>Review YOLOv12: Attention-Centric Real-Time Object Detectors (Medium)</li>\n</ol>"
   }
 ]

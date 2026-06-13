@@ -1,5 +1,7 @@
 .blog-card {
   flex: 1;
+  text-decoration: none;
+  cursor: default;
   padding: 28px;
   border-radius: 20px;
   background: var(--card);
@@ -10,8 +12,16 @@
   transition: border-color 0.2s ease;
 }
 
+a.blog-card {
+  cursor: pointer;
+}
+
 .blog-card:hover {
   border-color: var(--accent);
+}
+
+a.blog-card:hover {
+  text-decoration: none;
 }
 
 .blog-card-cat {
