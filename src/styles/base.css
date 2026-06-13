@@ -16,8 +16,9 @@ body {
   overflow-x: hidden;
 }
 
-/* ======= Color tokens ======= */
+/* ======= Design tokens ======= */
 :root {
+  /* Colors */
   --bg: #0c0c0f;
   --card: #15151b;
   --card2: #1c1c24;
@@ -26,6 +27,25 @@ body {
   --mid: #a6a6b0;
   --low: #71717c;
   --accent: #c8f94a;
+
+  /* Spacing */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 56px;
+  --space-3xl: 80px;
+  --space-section: 90px;
+  --space-section-mob: 24px;
+
+  /* Border radius */
+  --radius-sm:   8px;
+  --radius-md:  10px;
+  --radius-lg:  18px;
+  --radius-xl:  22px;
+  --radius-2xl: 28px;
+  --radius-full: 999px;
 }
 
 /* ======= Utility ======= */
@@ -60,7 +80,7 @@ body {
   align-items: center;
   gap: 6px;
   padding: 13px 22px;
-  border-radius: 999px;
+  border-radius: var(--radius-full);
   border: none;
   background: var(--accent);
   color: var(--bg);
@@ -83,7 +103,7 @@ body {
   align-items: center;
   gap: 6px;
   padding: 13px 22px;
-  border-radius: 999px;
+  border-radius: var(--radius-full);
   border: 1px solid var(--border);
   background: transparent;
   color: var(--hi);

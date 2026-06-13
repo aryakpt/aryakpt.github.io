@@ -1,6 +1,6 @@
 /* ======= Page Header ======= */
 .page-header {
-  padding: 56px 90px 40px;
+  padding: var(--space-2xl) var(--space-section) var(--space-xl);
 }
 
 .page-header-inner {
@@ -19,7 +19,7 @@
   font-weight: 500;
   color: var(--mid);
   text-decoration: none;
-  margin-bottom: 4px;
+  margin-bottom: var(--space-xs);
   transition: color 0.2s ease;
 }
 
@@ -45,7 +45,7 @@
 
 /* ======= Filter Bar ======= */
 .blogs-page-filter {
-  padding: 0 90px 32px;
+  padding: 0 var(--space-section) 32px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -53,13 +53,13 @@
   max-width: 1260px;
   margin: 0 auto;
   display: flex;
-  gap: 8px;
+  gap: var(--space-sm);
   flex-wrap: wrap;
 }
 
 .filter-btn {
   padding: 9px 18px;
-  border-radius: 999px;
+  border-radius: var(--radius-full);
   border: 1px solid var(--border);
   background: transparent;
   color: var(--mid);
@@ -85,7 +85,7 @@
 
 /* ======= Blog Grid ======= */
 .blogs-page {
-  padding: 48px 90px 80px;
+  padding: 48px var(--space-section) var(--space-3xl);
 }
 
 .blogs-page-inner {
@@ -96,7 +96,7 @@
 .blogs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: var(--space-lg);
 }
 
 .blogs-grid .blog-card {
@@ -114,7 +114,7 @@
 .blog-coming-soon {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--space-sm);
   margin-top: 32px;
   font-size: 13px;
   color: var(--low);
@@ -133,15 +133,15 @@
 /* ======= Responsive ======= */
 @media screen and (max-width: 900px) {
   .page-header {
-    padding: 40px 24px 28px;
+    padding: var(--space-xl) var(--space-section-mob) 28px;
   }
 
   .blogs-page-filter {
-    padding: 0 24px 24px;
+    padding: 0 var(--space-section-mob) var(--space-lg);
   }
 
   .blogs-page {
-    padding: 32px 24px 56px;
+    padding: 32px var(--space-section-mob) var(--space-2xl);
   }
 
   .blogs-grid {

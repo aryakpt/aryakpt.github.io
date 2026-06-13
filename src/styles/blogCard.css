@@ -20,7 +20,7 @@
   font-weight: 700;
   color: var(--accent);
   padding: 5px 12px;
-  border-radius: 999px;
+  border-radius: var(--radius-full);
   background: var(--card2);
   border: 1px solid var(--border);
 }

@@ -6,7 +6,7 @@ nav {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: 18px 90px;
+  padding: 18px var(--space-section);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +15,7 @@ nav {
 
 .nav-logo {
   background: var(--accent);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   padding: 5px 9px;
   font-weight: 800;
   font-size: 15px;
@@ -75,7 +75,7 @@ nav {
 
 @media screen and (max-width: 900px) {
   nav {
-    padding: 16px 24px;
+    padding: var(--space-md) var(--space-section-mob);
   }
 
   .nav-links {
