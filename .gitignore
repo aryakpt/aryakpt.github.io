@@ -1,1 +1,28 @@
-./node_modules
+# Dependencies
+node_modules/
+
+# Astro build output and caches
+dist/
+.astro/
+.vite/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Deployment caches
+.vercel/
+.netlify/

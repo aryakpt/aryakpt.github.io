@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import blogsData from '../../data/blogs.json';
+import type { BlogPost } from '../../types';
+
+import '../../styles/base.css';
+import '../../styles/navbar.css';
+import '../../styles/blogCard.css';
+import '../../styles/footer.css';
+import '../../styles/blogs.css';
+import '../../styles/blogDetail.css';
+
+const blogs = blogsData as BlogPost[];
+const filters = ['all', 'Artificial Intelligence', 'Engineering', 'Tutorial'];
+---
+
+<BaseLayout title="Blog - Arya Krisna Putra">
+  <Navbar activePage="blogs" />
+
+  <main id="blog-list-view">
+    <section class="page-header">
+      <div class="page-header-inner">
+        <a href="/" class="back-link"><span>&lt;-</span> Back to Home</a>
+        <p class="section-label">BLOG</p>
+        <h1 class="page-header-title">Writings &amp; Research Notes</h1>
+        <p class="page-header-desc">
+          Technical articles, research summaries, and engineering insights - from frontend architecture to AI research.
+        </p>
+      </div>
+    </section>
+
+    <div class="blogs-page-filter">
+      <div class="blogs-page-filter-inner">
+        {filters.map((filter) => <button class:list={['filter-btn', { active: filter === 'all' }]} data-filter={filter}>{filter === 'all' ? 'All' : filter}</button>)}
+      </div>
+    </div>
+
+    <section class="blogs-page">
+      <div class="blogs-page-inner">
+        <div class="blogs-grid" id="blogs-grid">
+          {blogs.map((blog) => <BlogCard blog={blog} />)}
+        </div>
+        <p class="blogs-empty" id="blogs-empty" hidden>No posts found in this category.</p>
+        <p class="blog-coming-soon" id="coming-soon-note">Articles coming soon - more posts will be published here.</p>
+      </div>
+    </section>
+  </main>
+
+  {
+    blogs.map((post) => (
+      <article class="blog-detail-page blog-detail-view" id={`post-${post.slug}`} data-post-slug={post.slug} hidden>
+        <div class="blog-detail-inner">
+          <div class="blog-detail-back">
+            <a href="/blogs/" class="back-link"><span>&lt;-</span> Back to Blog</a>
+          </div>
+          <header class="blog-detail-header">
+            <span class="blog-detail-cat">{post.category}</span>
+            <h1 class="blog-detail-title">{post.title}</h1>
+            <div class="blog-detail-meta">
+              <span class="blog-detail-date">{post.created_at}</span>
+              {post.externalUrl && (
+                <a href={post.externalUrl} target="_blank" rel="noopener" class="blog-detail-external">View original post -&gt;</a>
+              )}
+            </div>
+          </header>
+          <div class="blog-detail-content" set:html={post.content} />
+        </div>
+      </article>
+    ))
+  }
+
+  <section class="blog-detail-page" id="blog-not-found" hidden>
+    <div class="blog-detail-inner">
+      <div class="blog-detail-back">
+        <a href="/blogs/" class="back-link"><span>&lt;-</span> Back to Blog</a>
+      </div>
+      <h1 class="blog-detail-title">Post not found</h1>
+      <p style="color: var(--mid); margin-top: 12px;">The article you're looking for doesn't exist or has been moved.</p>
+    </div>
+  </section>
+
+  <Footer />
+  <script src="../../scripts/navbar.ts"></script>
+  <script src="../../scripts/blogs.ts"></script>
+</BaseLayout>

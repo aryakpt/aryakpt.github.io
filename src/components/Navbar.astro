@@ -1,0 +1,41 @@
+---
+interface Props {
+  activePage?: 'home' | 'projects' | 'blogs';
+}
+
+const { activePage = 'home' } = Astro.props;
+const resumeHref =
+  'https://docs.google.com/document/d/1cpi7Gid61lW3T3jTxbhPf_bfajchCAo8/edit?usp=sharing&ouid=103277840525621454634&rtpof=true&sd=true';
+const links = [
+  { label: 'Home', href: '/#home', page: 'home' },
+  { label: 'About', href: '/#about', page: 'about' },
+  { label: 'Projects', href: '/projects/', page: 'projects' },
+  { label: 'Blogs', href: '/blogs/', page: 'blogs' },
+  { label: 'Contact', href: '/#contact', page: 'contact' },
+];
+---
+
+<nav id="navbar" data-active-page={activePage}>
+  <a class="nav-logo" href="/">AK</a>
+  <div class="nav-links">
+    {
+      links.map((link) => (
+        <a href={link.href} class:list={{ active: link.page === activePage }}>
+          {link.label}
+        </a>
+      ))
+    }
+    <a href={resumeHref} target="_blank" rel="noopener" class="btn-outline">Resume</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+</nav>
+<div class="nav-mobile-menu" id="nav-mobile-menu">
+  {
+    links.map((link) => (
+      <a href={link.href} class:list={{ active: link.page === activePage }}>
+        {link.label}
+      </a>
+    ))
+  }
+  <a href={resumeHref} target="_blank" rel="noopener" class="btn-outline" style="align-self:flex-start">Resume</a>
+</div>

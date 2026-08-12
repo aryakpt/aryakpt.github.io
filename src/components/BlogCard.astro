@@ -1,0 +1,36 @@
+---
+import type { BlogPost } from '../types';
+import { formatDate } from '../utils/formatDate';
+
+interface Props {
+  blog: BlogPost;
+}
+
+const { blog } = Astro.props;
+const hasDetail = Boolean(blog.slug && blog.content);
+const href = hasDetail ? `/blogs/?post=${blog.slug}` : blog.externalUrl;
+const dateLabel = blog.created_at ? formatDate(blog.created_at) : blog.date ?? 'Coming Soon';
+---
+
+{
+  href ? (
+    <a class="blog-card" href={href} target={hasDetail ? undefined : '_blank'} rel="noopener">
+      <span class="blog-card-cat">{blog.category}</span>
+      <div class="blog-card-title">{blog.title}</div>
+      <div class="blog-card-excerpt">{blog.excerpt}</div>
+      <div class="blog-card-footer">
+        <span class="blog-card-date">{dateLabel}</span>
+        <span class="blog-card-read">{hasDetail ? 'Read More ->' : 'Read Post ->'}</span>
+      </div>
+    </a>
+  ) : (
+    <div class="blog-card">
+      <span class="blog-card-cat">{blog.category}</span>
+      <div class="blog-card-title">{blog.title}</div>
+      <div class="blog-card-excerpt">{blog.excerpt}</div>
+      <div class="blog-card-footer">
+        <span class="blog-card-date">{dateLabel}</span>
+      </div>
+    </div>
+  )
+}
