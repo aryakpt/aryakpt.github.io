@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import projectsData from '../../data/projects.json';
+import type { Project } from '../../types';
+
+import '../../styles/base.css';
+import '../../styles/navbar.css';
+import '../../styles/projectCard.css';
+import '../../styles/footer.css';
+import '../../styles/projects.css';
+
+const projects = projectsData as Project[];
+const filters = ['all', 'Professional', 'Personal', 'Academic', 'In Progress'];
+---
+
+<BaseLayout title="Projects - Arya Krisna Putra">
+  <Navbar activePage="projects" />
+
+  <section class="page-header">
+    <div class="page-header-inner">
+      <a href="/" class="back-link"><span>&lt;-</span> Back to Home</a>
+      <p class="section-label">PORTFOLIO</p>
+      <h1 class="page-header-title">All Projects</h1>
+      <p class="page-header-desc">
+        A complete list of projects I've built - from industry work to personal experiments and academic assignments.
+      </p>
+    </div>
+  </section>
+
+  <div class="projects-page-filter">
+    <div class="projects-page-filter-inner">
+      {filters.map((filter) => <button class:list={['filter-btn', { active: filter === 'all' }]} data-filter={filter}>{filter === 'all' ? 'All' : filter}</button>)}
+    </div>
+  </div>
+
+  <section class="projects-page">
+    <div class="projects-page-inner">
+      <div class="projects-grid" id="projects-grid">
+        {projects.map((project) => <ProjectCard project={project} />)}
+      </div>
+      <p class="projects-empty" id="projects-empty" hidden>No projects found.</p>
+    </div>
+  </section>
+
+  <Footer />
+  <script src="../../scripts/navbar.ts"></script>
+  <script src="../../scripts/projectFilter.ts"></script>
+</BaseLayout>

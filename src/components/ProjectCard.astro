@@ -1,0 +1,57 @@
+---
+import type { Project } from '../types';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const hasGithub = Boolean(project.github);
+const hasWebsite = Boolean(project.website);
+---
+
+<div class="project-card" data-status={project.status}>
+  {
+    project.image ? (
+      <div class="project-card-image">
+        <img src={project.image} alt={project.title} loading="lazy" />
+        <div class="project-card-badges">
+          <span class="project-card-tag">{project.tag}</span>
+          {project.status && <span class="project-card-status">{project.status}</span>}
+        </div>
+      </div>
+    ) : (
+      <div class="project-card-gradient">
+        <span class="project-card-tag gradient-tag">{project.tag}</span>
+        {project.status && <span class="project-card-status gradient-status">{project.status}</span>}
+      </div>
+    )
+  }
+  <div class="project-card-body">
+    <div class="project-card-title">{project.title}</div>
+    <div class="project-card-desc">{project.description}</div>
+    {
+      project.techs.length > 0 && (
+        <div class="project-card-techs">
+          {project.techs.map((tech) => <span class="project-tech-tag">{tech}</span>)}
+        </div>
+      )
+    }
+    {
+      (hasGithub || hasWebsite) && (
+        <div class="project-card-actions">
+          {hasGithub && (
+            <a href={project.github} class="project-card-btn" target="_blank" rel="noopener">
+              GitHub <span>&rarr;</span>
+            </a>
+          )}
+          {hasWebsite && (
+            <a href={project.website} class="project-card-btn" target="_blank" rel="noopener">
+              Visit site <span>&rarr;</span>
+            </a>
+          )}
+        </div>
+      )
+    }
+  </div>
+</div>
